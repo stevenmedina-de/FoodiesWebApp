@@ -1,0 +1,101 @@
+INSERT INTO food_service_profile.restaurant (r_name)
+VALUES
+	('Luigi`s'),
+	('Mediterranean Bar & Grill'),
+	('Beachhead Martini`s'),
+	('Martha`s Slushies'),
+	('Wuhan Dumpling Buffet'),
+	('Freddy`s Pizzas'),
+	('Gold Skytower'),
+	('Larry`s Burgers'),
+	('Pickle`s'),
+	('Tio`s');
+
+INSERT INTO food_service_profile.restaurant_type (r_id, r_type)
+VALUES
+	(1, 'Italian'),
+	(1, 'Casual'),
+	(2, 'Family'),
+	(2, 'Bar'),
+	(2, 'Mediterranean'),
+	(3, 'Bar'),
+	(3, 'Carribean'),
+	(4, 'Cafe'),
+	(5, 'Chinese'),
+	(5, 'Buffet'),
+	(6, 'Pizzeria'),
+	(6, 'Family'),
+	(7, 'Fine Dining'),
+	(7, 'Italian'),
+	(8, 'Bar'),
+	(8, 'Casual'),
+	(9, 'Casual'),
+	(9, 'Bar'),
+	(10, 'Mexican'),
+	(10, 'Bar'),
+	(10, 'Casual');
+
+INSERT INTO food_service_profile.meal (m_name)
+VALUES
+	('Carbonara'), ('Shrimp Scampi'),
+	('Lasagna'), ('Chicken Marsala'),
+	('Caesar Salad'), ('Mozzarella Sticks'),
+	('Philly Cheese Steak Sandwich'), ('Angus Burger'),
+	('Fish and Chips'), ('Rack of Ribs'),
+	('Grouper'), ('Salmon'),
+	('Filet Mignon'), ('Shrimp & Scallops'),
+	('N.Y. Steak'), ('Buffalo Chicken Wrap'),
+	('Chicken Ranch Quesadilla'), ('Ultimate Club'),
+	('Baja Chicken Bowl'), ('Chipotle Chicken Club'),
+	('Bourbon Chicken with Rice'), ('Roast Pork with Broccoli & Rice'),
+	('Shrimp Fried Rice'), ('Lobster Chow Mein'),
+	('Krab Meat Egg Foo Young'), ('Stuffed Pizza'),
+	('Pepperoni Pizza'), ('Meatlover`s Pizza'),
+	('Calzone'), ('Philly Steak Wraps'),
+	('Gorgonzola Gnocchi'), ('Beef Ravioli'),
+	('Seafood Linguini'), ('Chicken Marsala'),
+	('Terra e Mare'), ('Sirloin Steak'),
+	('BBQ Bacon Burger'), ('Tex-Mex Burger'),
+	('Monterrey Chicken Burger'), ('Mushroom Burger'),
+	('Breakfast Burger'), ('Ribeye Steak'),
+	('Steak Fajitas'), ('Cajun Chicken Pasta'),
+	('Chicken Crispers'), ('Chicken Fajitas'),
+	('Chile Rellenos'), ('Cheese Enchiladas'),
+	('Grande Burrito'), ('Chimichanga');
+
+INSERT INTO food_service_profile.meal_type (meal_id, m_type)
+VALUES
+	(1, 'Italian'),
+	(5, 'Low-Calorie'),
+	(9, 'American'),
+	(13, 'Steak'),
+	(18, 'Low-Calorie'),
+	(21, 'Cajun'),
+	(35, 'Italian'),
+	(42, 'Steak'),
+	(47, 'Mexican'),
+	(50, 'Mexican');
+
+INSERT INTO food_service_profile.food_service (r_id, m_id)
+VALUES
+	(1,1), (1,2), (1,3), (1,4),
+	(1,5), (1,35), (1,33), (1,32),
+	(1,31), (1,27), (1,11), (1,14),
+	(2,2), (2,6), (2,7), (2,8),
+	(2,9), (2,10), (2,12), (3,11),
+	(3,12), (3,13), (3,14), (3,15),
+	(3,5), (3,32), (4,16), (4,17),
+	(4,18), (4,19), (4,20), (4,30),
+	(5,21), (5,22), (5,23), (5,24),
+	(5,25), (6,26), (6,27), (6,28),
+	(6,29), (6,30), (6,3), (6,4),
+	(6,6), (6,7), (6,34), (7,31),
+	(7,32), (7,33), (7,34), (7,35),
+	(7,2), (7,4), (7,13), (7,14),
+	(7,15), (8,8), (8,37), (8,38),
+	(8,39), (8,40), (8,41), (8,5),
+	(9,8), (9,41), (9,40), (9,38),
+	(9,37), (9,10), (9,36), (9,42),
+	(9,46), (9,43), (9,5), (9,45),
+	(10,46), (10,47), (10,48), (10,49),
+	(10,50), (10,43), (10,17);
